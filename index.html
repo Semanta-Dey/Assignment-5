@@ -12,7 +12,7 @@
 </head>
 <body class="bg-[#c8daff]">
   <nav class="pt-7">
-    <div class="navbar pl-7 pr-7 bg-white w-[90%] mx-auto rounded-lg flex justify-between">
+    <div class="navbar pl-6 pr-6 bg-white w-[90%] mx-auto rounded-lg flex justify-between">
         <div class="flex justify-center items-center">
         <img src="assets/logo.png">
           <a class="text-2xl pl-2">Dev<span class="font-bold">Board</span></a>
@@ -31,6 +31,54 @@
         </div>
       </div>
     </nav>
+
+<!-- Main Section -->
+<main  class="pl-6 pr-6 mt-6 bg-white w-[90%] mx-auto flex justify-between h-full">
+  <!-- First container -->
+    <div id="container" class="w-[75%] bg-white-200 h-full p-4">
+      <div class="flex gap-3">
+        <div class="border-1 border-none rounded-lg bg-[#c8daff] h-auto w-1/4 p-3 flex justify-center items-center gap-2">
+          <div class="h-9 w-9 rounded-full bg-white flex justify-center items-center">
+            <img src="assets/checkbox.png" class="h-4">
+          </div>
+          <div>
+            <p class="text-slate-600">Task Assigned</p>
+            <p class="font-bold text-2xl">05</p>
+          </div>
+        </div>
+        <!-- Box-2 -->
+        <div class="border-1 border-none rounded-lg bg-[#c8daff] h-auto w-2/4 p-3 flex items-center gap-2 bg-gradient-to-r from-[#3752fd] via-[#6c7ffa] to-[#9ba8f8]">
+          <div>
+            <img src="assets/board.png" class="h-14 pl-2">
+          </div>
+          <div>
+            <p class="text-white font-semibold text-xl pl-2">Discover Something <br>New Today!</p>
+          </div>
+        </div>
+        <!-- Box-3 -->
+        <div class="border-1 border-none rounded-lg bg-[#c8daff] h-auto w-1/4 p-3 flex justify-center items-center gap-2">
+          <div class="h-9 w-9 rounded-full bg-white flex justify-center items-center">
+            <img src="assets/calender.png" class="h-4">
+          </div>
+          <div>
+            <!-- <p id="date" class="font-semibold text-xl"></p> -->
+            <p id="day" class="text-gray-600 text-lg"></p>
+            <p id="full-date" class="font-bold text-xl text-teal-900"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Container -->
+    <div class="w-[22%] bg-green-600 h-full">
+      <div class="flex">
+        <div class="border-2 border-indigo-700 h-9 w-10"></div>
+        <div class="border-2 border-indigo-700 h-9 w-10"></div>
+        <div class="border-2 border-indigo-700 h-9 w-10"></div>
+      </div>
+    </div>
+
+</main>
 <script src="javascript/script.js"></script>
 </body>
 </html>
