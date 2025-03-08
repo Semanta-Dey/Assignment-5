@@ -3,27 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Real-Time Date</title>
-    <script>
-        function updateDate() {
-            const dateElement = document.getElementById("date");
-            const now = new Date();
-            dateElement.innerText = now.toDateString(); // Format: "Wed, Mar 5 2025"
-        }
-
-        document.addEventListener("DOMContentLoaded", updateDate);
-    </script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        h1{
-            background-color: rgb(220, 236, 255);
-        }
-    </style>
+    <title>Button Functionality</title>
+    <script src="https://cdn.tailwindcss.com"></script> <!-- Tailwind CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@3.3.0/dist/full.css" /> <!-- DaisyUI -->
 </head>
-<body class="flex items-center justify-center h-screen bg-gray-100">
-    <div class="text-center p-6 bg-white rounded-lg shadow-lg">
-        <h1 class="text-xl font-bold text-gray-800">Today's Date:</h1>
-        <p id="date" class="text-lg text-blue-600 mt-2"></p>
+<body class="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-5">
+
+    <div class="grid grid-cols-2 gap-4 max-w-md">
+        <!-- Buttons with same functionality -->
+        <button class="groupA btn btn-primary">Button 1</button>
+        <button class="groupA btn btn-primary">Button 2</button>
+        <button class="groupA btn btn-primary">Button 3</button>
+        <button class="groupA btn btn-primary">Button 4</button>
+        <button class="groupA btn btn-primary">Button 5</button>
+        <button class="groupA btn btn-primary">Button 6</button>
+
+        <!-- Buttons with different functionality -->
+        <button id="btn7" class="btn btn-secondary">Button 7</button>
+        <button id="btn8" class="btn btn-accent">Button 8</button>
+        <button id="btn9" class="btn btn-success">Button 9</button>
+        <button id="btn10" class="btn btn-error">Button 10</button>
     </div>
+
+    <script>
+        // Function for buttons with the same functionality
+function groupAFunction() {
+    alert("Group A button clicked!");
+}
+
+// Select all buttons with class "groupA" and add event listener
+document.querySelectorAll(".groupA").forEach(button => {
+    button.addEventListener("click", groupAFunction);
+});
+
+// Individual button functionalities
+document.getElementById("btn7").addEventListener("click", () => {
+    alert("Button 7 clicked with Secondary color!");
+});
+
+document.getElementById("btn8").addEventListener("click", () => {
+    alert("Button 8 clicked with Accent color!");
+});
+
+document.getElementById("btn9").addEventListener("click", () => {
+    alert("Button 9 clicked with Success color!");
+});
+
+document.getElementById("btn10").addEventListener("click", () => {
+    alert("Button 10 clicked with Error color!");
+});
+
+    </script> <!-- JavaScript file -->
 </body>
 </html>
