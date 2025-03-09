@@ -3,56 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Button Functionality</title>
-    <script src="https://cdn.tailwindcss.com"></script> <!-- Tailwind CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@3.3.0/dist/full.css" /> <!-- DaisyUI -->
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
-<body class="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-5">
-
-    <div class="grid grid-cols-2 gap-4 max-w-md">
-        <!-- Buttons with same functionality -->
-        <button class="groupA btn btn-primary">Button 1</button>
-        <button class="groupA btn btn-primary">Button 2</button>
-        <button class="groupA btn btn-primary">Button 3</button>
-        <button class="groupA btn btn-primary">Button 4</button>
-        <button class="groupA btn btn-primary">Button 5</button>
-        <button class="groupA btn btn-primary">Button 6</button>
-
-        <!-- Buttons with different functionality -->
-        <button id="btn7" class="btn btn-secondary">Button 7</button>
-        <button id="btn8" class="btn btn-accent">Button 8</button>
-        <button id="btn9" class="btn btn-success">Button 9</button>
-        <button id="btn10" class="btn btn-error">Button 10</button>
-    </div>
-
-    <script>
-        // Function for buttons with the same functionality
-function groupAFunction() {
-    alert("Group A button clicked!");
-}
-
-// Select all buttons with class "groupA" and add event listener
-document.querySelectorAll(".groupA").forEach(button => {
-    button.addEventListener("click", groupAFunction);
-});
-
-// Individual button functionalities
-document.getElementById("btn7").addEventListener("click", () => {
-    alert("Button 7 clicked with Secondary color!");
-});
-
-document.getElementById("btn8").addEventListener("click", () => {
-    alert("Button 8 clicked with Accent color!");
-});
-
-document.getElementById("btn9").addEventListener("click", () => {
-    alert("Button 9 clicked with Success color!");
-});
-
-document.getElementById("btn10").addEventListener("click", () => {
-    alert("Button 10 clicked with Error color!");
-});
-
-    </script> <!-- JavaScript file -->
+<body class="bg-[rgb(221,233,248)]">
+    <nav class="pt-7">
+        <div class="navbar pl-6 pr-6 bg-white w-[90%] mx-auto rounded-lg flex justify-between">
+            <div class="flex justify-center items-center">
+            <img src="assets/logo.png">
+              <a class="text-2xl pl-2">Dev<span class="font-bold">Board</span></a>
+            </div>
+          
+            <div class="flex gap-5 items-center">
+            <a href="index.html"><button class="btn text-white bg-blue-700">Back To Desk</button></a>
+            </div>
+          </div>
+        </nav>
+    <section>
+        <h2 class="font-bold text-center text-2xl pt-5 pb-5">Blogs</h2>
+        <!-- Question-1 -->
+        <div class="pt-7 pl-6 pr-6 bg-white w-[90%] mx-auto rounded-lg mt-5 pb-5">
+            <h2 class="font-bold text-xl">Question-1: What are the different ways to select an element in the DOM?</h2>
+            <div class="border-t-2 border-dashed border-[rgb(220,236,255)] w-full my-4"></div>
+            <p class="pl-6 pr-6 bg-white w-full">In DOM there are different ways to select an element . They are:<br> 
+                1."document.getElementById("ID")",<br>2."document.getElementsByClassName("class name")",<br>3."document.getElementsByName()",<br>4."document.getElementsByTagName()",<br>5."document.getElementsByTagNameNS()",<br>6."document.querySelectorAll()",<br>7."document.querySelector()".</p>
+        </div>
+        <!-- Question-2 -->
+        <div class="pt-7 pl-6 pr-6 bg-white w-[90%] mx-auto rounded-lg mt-5 pb-5">
+            <h2 class="font-bold text-xl">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h2>
+            <div class="border-t-2 border-dashed border-[rgb(220,236,255)] w-full my-4"></div>
+            <p class="pl-6 pr-6 bg-white w-full">1.By using innerHTML we get and set inner HTML of an element.<br>
+            2.By using innerText we get and set just inner text of an element.<br>
+            3.By using textContent we get the text content of an element and also get the hidden content.</p>
+        </div>
+        <!-- Question-3 -->
+        <div class="pt-7 pl-6 pr-6 bg-white w-[90%] mx-auto rounded-lg mt-5 pb-5">
+            <h2 class="font-bold text-xl">Question-3: What is event delegation in the DOM?</h2>
+            <div class="border-t-2 border-dashed border-[rgb(220,236,255)] w-full my-4"></div>
+            <p class="pl-6 pr-6 bg-white w-full">Event delegation is a technique in JavaScript that allows you to handle events at a higher level instead of adding event listeners to multiple child elements. This is useful when dealing with dynamically created elements.</p>
+        </div>
+        <!-- Question-4 -->
+        <div class="pt-7 pl-6 pr-6 bg-white w-[90%] mx-auto rounded-lg mt-5 pb-5">
+            <h2 class="font-bold text-xl">Question-4: What is event bubbling in the DOM?</h2>
+            <div class="border-t-2 border-dashed border-[rgb(220,236,255)] w-full my-4"></div>
+            <p class="pl-6 pr-6 bg-white w-full">Event bubbling is a behavior in JavaScript where an event starts at the target element and then propagates through its ancestors until it reaches the root.</p>
+        </div>
+        <!-- Question-5 -->
+        <div class="pt-7 pl-6 pr-6 bg-white w-[90%] mx-auto rounded-lg mt-5 pb-5">
+            <h2 class="font-bold text-xl">Question-5: How do you create, add, and remove elements using JavaScript?</h2>
+            <div class="border-t-2 border-dashed border-[rgb(220,236,255)] w-full my-4"></div>
+            <p class="pl-6 pr-6 bg-white w-full"><span class="font-bold">1. Creating Elements</span><br>
+            ➡️To create a new element we can use "document.createElement(tagName)" .<br>
+            <span class="font-bold">2.Add Elements</span><br>
+            ➡️appendChild(),<br>
+            ➡️insertBefore(),<br>
+            ➡️insertAdjacentHTML().<br>
+            <span class="font-bold">3.Remove Elements</span><br>
+            ➡️remove(),<br>
+            ➡️removeChild(),<br>
+            ➡️replaceChild().
+            </p>
+        </div>
+    </section>
 </body>
 </html>

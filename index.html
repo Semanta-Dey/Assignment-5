@@ -12,6 +12,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body class="bg-[rgb(220,236,255)]">
+  <!-- Navbar -->
   <nav class="pt-7">
     <div class="navbar pl-6 pr-6 bg-white w-[90%] mx-auto rounded-lg flex justify-between">
         <div class="flex justify-center items-center">
@@ -26,7 +27,7 @@
           </div>
           <div>
               <div class="w-12 h-12 rounded-full bg-[rgb(220,236,255)] flex items-center justify-center">
-                <img alt="Color picker" src="assets/theme-btn.png" class="h-10 p-0.5 cursor-pointer">
+                <img alt="Color picker" src="assets/theme-btn.png" class="h-10 p-0.5 cursor-pointer" id="color-picker">
               </div>
           </div>
         </div>
@@ -171,7 +172,7 @@
         <img src="assets/activity.png" class="h-4">
         <h2 class="text-xl font-semibold">Activity Log</h2>
       </div>
-      <button class="btn text-white bg-[rgb(55,82,253)] rounded-lg pr-3 pl-3">Clear History</button>
+      <button class="btn text-white bg-[rgb(55,82,253)] rounded-lg pr-3 pl-3" id="clear-history">Clear History</button>
       <div class="border-t-2 border-dashed border-[rgb(220,236,255)] w-full my-4"></div>
       <div id="message" class="p-2 h-auto rounded-lg overflow-y-scroll"></div>
     </div>
